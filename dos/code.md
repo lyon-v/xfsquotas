@@ -21,9 +21,8 @@ xfsquotas/
 │   ├── mount/                          # 与挂载信息相关的逻辑
 │   │   └── parser.go                   # 原 mountpoint.go，挂载点解析工具
 │   ├── project/                        # XFS 项目配额核心逻辑
-│   │   ├── quota.go                    # 核心实现，set/query/clean 等
-│   │   ├── file.go                     # 管理 /etc/projects 和 /etc/projid
-│   │   └── types.go                    # 定义 DiskQuotaSize 等结构体
+│   │   ├── quota.go                    # 核心实现，set/query/clean 等，包含 DiskQuotaSize 结构体
+│   │   └── file.go                     # 管理 /etc/projects 和 /etc/projid
 │   └── xfs/                            # 对 xfs_quota 命令的封装
 │       └── client.go                   # 封装系统调用/命令执行
 ├── api/                                # 可导出的 Go SDK（可选，若计划做库）
